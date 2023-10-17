@@ -45,3 +45,4 @@ Valgrind is an instrumentation framework for building dynamic analysis tools. Th
 
 - Chip8 technical reference: http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#3.1
 - GameBoy Dev technical documentation: https://gbdev.io/pandocs
+- ARM vs x86: https://www.androidauthority.com/arm-vs-x86-key-differences-explained-568718/

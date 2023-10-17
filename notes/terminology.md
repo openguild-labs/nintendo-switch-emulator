@@ -2,6 +2,10 @@
 
 This file contains essential terminology related to Nintendo Switch development and its surrounding ecosystem.
 
+### Prod keys
+
+Prod keys. These are typically used to decrypt system files and encrypted game files. These keys get changed in about every major system update, so make sure to keep your keys up-to-date if you want to play newer games!
+
 ## Horizon OS
 
 ### Kernel
