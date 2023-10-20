@@ -1,5 +1,52 @@
 # NSE - Nintendo Switch Emulator
 
+### Requirements
+
+- Apply Hypervisor for Macos: https://developer.apple.com/documentation/hypervisor
+
+Build virtualization solutions on top of a lightweight hypervisor, without third-party kernel extensions.
+
+Run this command to see if your MacOS supports Hypervisor `sysctl -a | grep kern.hv`
+
+### Ryujinx Architecture
+
+#### `public boool loadNsp(string path)`
+
+Method used to load the nsp file
+
+```cs
+public bool LoadNsp(string path)
+  {
+      FileStream file = new(path, FileMode.Open, FileAccess.Read);
+      PartitionFileSystem partitionFileSystem = new(file.AsStorage());
+
+      (bool success, ProcessResult processResult) = partitionFileSystem.TryLoad(_device, path, out string errorMessage);
+
+      if (processResult.ProcessId == 0)
+      {
+          // This is not a normal NSP, it's actually a ExeFS as a NSP
+          processResult = partitionFileSystem.Load(_device, new BlitStruct<ApplicationControlProperty>(1), partitionFileSystem.GetNpdm(), true);
+      }
+
+      if (processResult.ProcessId != 0 && _processesByPid.TryAdd(processResult.ProcessId, processResult))
+      {
+          if (processResult.Start(_device))
+          {
+              _latestPid = processResult.ProcessId;
+
+              return true;
+          }
+      }
+
+      if (!success)
+      {
+          Logger.Error?.Print(LogClass.Loader, errorMessage, nameof(PartitionFileSystemExtensions.TryLoad));
+      }
+
+      return false;
+  }
+```
+
 ### Milestone
 
 - [ ] Firmware configuration

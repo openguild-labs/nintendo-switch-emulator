@@ -4,7 +4,22 @@
 
 Notable findings include that the Switch operating system is codenamed Horizon, that it is an evolution of the Nintendo 3DS system software, and that it implements a proprietary microkernel architecture.
 
-## Other Emulators
+## Instruction Set Architecture
+
+- Basic ofs SIMD Programming: http://ftp.cvut.cz/kernel/people/geoff/cell/ps3-linux-docs/CellProgrammingTutorial/BasicsOfSIMDProgramming.html
+
+## Operating Systems
+
+- eduOS-rs: https://github.com/RWTH-OS/eduOS-rs
+
+Educational purpose operating system written in Rust
+
+## Virtualization & Emulators
+
+- xhypervisor: https://github.com/RWTH-OS/xhypervisor
+- hypervisor-rs: https://github.com/saurvs/hypervisor-rs
+
+Apple Hypervisor written in Rust
 
 - Ryujinx (MacOS / Linux / Windows): https://github.com/Ryujinx/Ryujinx
 
