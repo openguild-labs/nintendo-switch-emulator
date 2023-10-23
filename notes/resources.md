@@ -8,8 +8,10 @@ Notable findings include that the Switch operating system is codenamed Horizon, 
 
 - Basic ofs SIMD Programming: http://ftp.cvut.cz/kernel/people/geoff/cell/ps3-linux-docs/CellProgrammingTutorial/BasicsOfSIMDProgramming.html
 
-## Operating Systems
+## Computer & Operating Systems
 
+- Little Computer 3: https://en.wikipedia.org/wiki/Little_Computer_3
+- LC3b: https://users.ece.utexas.edu/~patt/07s.360N/handouts/360n.appC.pdf
 - eduOS-rs: https://github.com/RWTH-OS/eduOS-rs
 
 Educational purpose operating system written in Rust
@@ -55,6 +57,10 @@ Qt frontend for radare
 - valgrind: https://valgrind.org/
 
 Valgrind is an instrumentation framework for building dynamic analysis tools. There are Valgrind tools that can automatically detect many memory management and threading bugs, and profile your programs in detail. You can also use Valgrind to build new tools. (TLDR: Check memory allocation and debug memory leak in the low level environment)
+
+## Articles
+
+- Law of abstraction: https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/
 
 ## Reference
 
