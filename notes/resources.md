@@ -42,6 +42,10 @@ A library that reimplements parts of the Nintendo Switch OS
 
 ## Tools
 
+- hactool: https://github.com/SciresM/hactool
+
+hactool is a cli, that allows you to view contents of NSP files, extract invidual files, or decrypt/encrypt files.
+
 - radare2: https://github.com/radareorg/radare2
 
 r2 is a complete rewrite of radare. It provides a set of libraries, tools and plugins to ease reverse engineering tasks. Distributed mostly under LGPLv3, each plugin can have different licenses (see r2 -L, rasm2 -L, ...).

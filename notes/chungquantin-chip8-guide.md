@@ -2,6 +2,9 @@
 
 ## Overview
 
+<!-- Cowgod's whitepaper seems contain wrong information -->
+<!-- I saw many warning about the Cowgod's whitepaper, here's one -->
+<!-- https://discord.com/channels/273534239310479360/478739360494387223/1133872714453614722 -->
 - Specification: http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#2.5
 - Full flow with a demo: https://www.taniarascia.com/writing-an-emulator-in-javascript-chip8/
 - Youtube breakdown: https://www.youtube.com/watch?v=YtSgV3gY3fs
