@@ -42,6 +42,10 @@ NSP will get you banned.
 
 Contains all of the files and data needed to display icons, a title and a game. Used For: Dumps of SD and NAND games
 
+### PFS0
+PFS0 (Partition FS) format is used within NCAs, and is a Switch-exclusive format
+Link to resource: https://wiki.oatmealdome.me/PFS0_(File_Format)
+
 ### NCA
 
 A raw format that can contain a multitude of things (most similar to a ZIP file on your computer) Used For: System Archives

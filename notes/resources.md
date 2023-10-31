@@ -40,6 +40,8 @@ This breaks down the overall architecture of the NS, a good resource
 
 A library that reimplements parts of the Nintendo Switch OS
 
+- Awesome Nintendo Switch: https://reswitched.github.io/awesome/
+
 ## Tools
 
 - hactool: https://github.com/SciresM/hactool
@@ -66,8 +68,13 @@ Valgrind is an instrumentation framework for building dynamic analysis tools. Th
 
 - Law of abstraction: https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/
 
+## Rust
+
+- Effective Rust resource: https://www.lurklurk.org/effective-rust/
+
 ## Reference
 
 - Chip8 technical reference: http://devernay.free.fr/hacks/chip8/C8TECH10.HTM#3.1
 - GameBoy Dev technical documentation: https://gbdev.io/pandocs
 - ARM vs x86: https://www.androidauthority.com/arm-vs-x86-key-differences-explained-568718/
+- ARM technical reference: https://armv8-ref.codingbelief.com/en/chapter_d4/d4_the_aarch64_virtual_memory_system_archi.html
