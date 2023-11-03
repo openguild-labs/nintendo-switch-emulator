@@ -1,14 +1,14 @@
 use std::io::{Error, ErrorKind, Read, Seek, SeekFrom};
 
 use crate::{
-    error::FileSystemError,
-    reader::{reader_read_val, ByteDataReader, ReadSeek},
+    err::fs_err::FileSystemError,
+    nca::reader::{reader_read_val, ByteDataReader, ReadSeek},
 };
 
 #[cfg(target_pointer_width = "64")]
 #[derive(Copy, Clone, PartialEq, Eq, Debug, Default)]
 #[repr(C)]
-struct PFS0FileEntry {
+pub struct PFS0FileEntry {
     offset: u64,
     /// usize in a 64-bit target is 0x8 = 8 bytes
     /// because _offset_ is defined to be 0x8 => enforce the Rust architecture
@@ -24,7 +24,7 @@ type PFS0FileEntryTable = Vec<PFS0FileEntry>;
 #[derive(Clone, Debug)]
 #[cfg(target_pointer_width = "64")]
 #[repr(C)]
-struct PFS0FileHeader {
+pub struct PFS0FileHeader {
     /// 0x0: The "PFS0" magic (0x30534650 in LE) - (4 bytes)
     pub magic: u32,
     /// 0x4: Number of files within the PFS - (4 bytes)

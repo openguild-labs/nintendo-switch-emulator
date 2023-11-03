@@ -1,6 +1,6 @@
 use std::io::{Read, Seek, SeekFrom};
 
-use crate::error::FileSystemError;
+use crate::err::fs_err::FileSystemError;
 
 pub trait ReadSeek: Read + Seek {}
 impl<R: Read + Seek + Send + Sync> ReadSeek for R {}

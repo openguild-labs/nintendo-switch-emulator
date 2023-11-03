@@ -41,6 +41,7 @@ This breaks down the overall architecture of the NS, a good resource
 A library that reimplements parts of the Nintendo Switch OS
 
 - Awesome Nintendo Switch: https://reswitched.github.io/awesome/
+- Deep Sea Knowledge - Switch Game Modding: https://wiki.oatmealdome.me/Main_Page
 
 ## Tools
 
