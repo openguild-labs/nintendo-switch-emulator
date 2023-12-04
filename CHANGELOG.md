@@ -1,0 +1,12 @@
+- init ffi dynarmic lib
+- add basic structure for arm aarch64 register
+- file loader: add file loader for pfs0 file format
+- add `toba-arm`notes
+- Update resources.md
+- Add hypervisor note
+- emulator: update setup guide for ryujinx
+- rom: install nsp arcade archives darius II
+- note: add resources
+- note: add draft
+- create the notes folder
+- first commit
